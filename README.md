@@ -1,4 +1,4 @@
-# probability_and_statistics
+# PROBABILITY AND STATISTICS A/B: FACULTY OF ECONOMICS KEIO UNIVERSITY
 
 ## Course materials for PROBABILITY AND STATISTICS A/B
 
