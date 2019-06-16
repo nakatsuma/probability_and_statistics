@@ -10,7 +10,8 @@ Teruo Nakatsuma (Faculty of Economics, Keio University, Japan)
   - [Step 1: Installing Anaconda](#step-1-installing-anaconda)
   - [Step 2: Creating an environment](#step-2-creating-an-environment)
 - [How to start JupyterLab](#how-to-start-jupyterlab)
-- [Jupyter Notebooks and related files in `notebook_a`](#jupyter-notebooks-and-related-files-in-notebooka)
+- [Jupyter Notebooks and related files in `notebook-a`](#jupyter-notebooks-and-related-files-in-notebook-a)
+
 
 ---
 
@@ -82,7 +83,7 @@ Your default browser will pop up. Click the `Python (Bayes)` button to create a 
 
 ---
 
-## Jupyter Notebooks and related files in `notebook_a`
+## Jupyter Notebooks and related files in `notebook-a`
 
 | file name | description |
 |:-------------------------------|:------------------------------------------|
