@@ -1,8 +1,16 @@
-# PROBABILITY AND STATISTICS A/B
+# PROBABILITY AND STATISTICS A/B <!-- omit in toc -->
 
-## Course materials for PROBABILITY AND STATISTICS A/B
+## Course materials for PROBABILITY AND STATISTICS A/B <!-- omit in toc -->
 
 Teruo Nakatsuma (Faculty of Economics, Keio University, Japan)
+
+---
+
+- [How to set up Python and necessary packages](#how-to-set-up-python-and-necessary-packages)
+  - [Step 1: Installing Anaconda](#step-1-installing-anaconda)
+  - [Step 2: Creating an environment](#step-2-creating-an-environment)
+- [How to start JupyterLab](#how-to-start-jupyterlab)
+- [Jupyter Notebooks and related files in `notebook_a`](#jupyter-notebooks-and-related-files-in-notebooka)
 
 ---
 
@@ -71,5 +79,29 @@ Click the `Launch` button in the `JupyterLab` panel.
 Your default browser will pop up. Click the `Python (Bayes)` button to create a Jupyter notebook.
 
 ![Anaconda Navigator](Screenshot-JupyterLab.png)
+
+---
+
+## Jupyter Notebooks and related files in `notebook_a`
+
+| file name | description |
+|:-------------------------------|:------------------------------------------|
+| bernoulli_inference.ipynb      | posterior inferernce on Bernoulli dist.   |
+| bernoulli_posterior.ipynb      | likelihood, prior and posterior dist.     |
+| Dimes.csv                      | weights of a sample of dimes              |
+| gaussian_inference.ipynb       | posterior inference on Gaussian dist.     |
+| Housing.csv                    | sales prices of houses                    |
+| housing_price.ipynb            | hedonic price model of houses             |
+| labor_participation.ipynb      | logit model of labor participation        |
+| logit.ipynb                    | PyMC example of logit model               |
+| Mroz.csv                       | US women's labor paritication data        |
+| poisson_inference.ipynb        | posterior inference on Poisson dist.      |
+| poisson_regression.ipynb       | PyMC example of Poisson regression model  |
+| probit.ipynb                   | PyMC example of probit model              |
+| prussian.csv                   | Prussian army horse kick data             |
+| regression.ipynb               | PyMC example of regression analysis       |
+| ships.csv                      | ships damage data                         |
+| ships_damage.ipynb             | Poisson regression model of ships damage  |
+| wage_education.ipynb           | relationship between wage and eduaction   |
 
 ---
