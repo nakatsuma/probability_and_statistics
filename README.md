@@ -6,12 +6,11 @@ Teruo Nakatsuma (Faculty of Economics, Keio University, Japan)
 
 ---
 
-- [How to set up Python and necessary packages](#how-to-set-up-python-and-necessary-packages)
-  - [Step 1: Installing Anaconda](#step-1-installing-anaconda)
-  - [Step 2: Creating an environment](#step-2-creating-an-environment)
-- [How to start JupyterLab](#how-to-start-jupyterlab)
-- [Jupyter Notebooks and related files in `notebook-a`](#jupyter-notebooks-and-related-files-in-notebook-a)
-
+- [How to set up Python and necessary packages](#How-to-set-up-Python-and-necessary-packages)
+  - [Step 1: Installing Anaconda](#Step-1-Installing-Anaconda)
+  - [Step 2: Creating an environment](#Step-2-Creating-an-environment)
+- [How to start JupyterLab](#How-to-start-JupyterLab)
+- [Jupyter Notebooks and related files in `notebook-a`](#Jupyter-Notebooks-and-related-files-in-notebook-a)
 
 ---
 
@@ -32,31 +31,31 @@ I strongly recommend using [Anaconda](https://www.anaconda.com/). It can install
 Start `Anaconda Powershell Prompt` (Windows) or `Terminal` (macOS, Linux) and type
 
 ```IPython
-(base) C:\Users\Thomas> conda create -n bayes jupyterlab seaborn spyder pymc3
+(base) PS C:\Users\Thomas> conda update --all
 ```
 
-Then type
+This will update all packages in Anaconda. Then type
 
 ```IPython
-(base) C:\Users\Thomas> conda activate bayes
+(base) PS C:\Users\Thomas> conda create -n bayes jupyterlab seaborn spyder conda-forge::pymc3 conda-forge::arviz
+```
+
+This will create the enviromnemt for PyMC. Then type
+
+```IPython
+(base) PS C:\Users\Thomas> conda activate bayes
 ```
 
 You will notice that the prompt is altered as
 
 ```IPython
-(bayes) C:\Users\Thomas>
-```
-
-Type
-
-```IPython
-(bayes) C:\Users\Thomas> conda install conda-forge::theano
+(bayes) PS C:\Users\Thomas>
 ```
 
 Finally type
 
 ```IPython
-(bayes) C:\Users\Thomas> python -m ipykernel install --user --name bayes --display-name "Python (Bayes)"
+(bayes) PS C:\Users\Thomas> python -m ipykernel install --user --name bayes --display-name "Python (Bayes)"
 ```
 
 Now you are ready for Python!
@@ -68,7 +67,7 @@ Now you are ready for Python!
 Start `Anaconda Navigator`. You may find it in `Start Menu` (Windows) or `Launchpad` (macOS). Alternatively you just type
 
 ```IPython
-(base) C:\Users\Thomas> anaconda-navigator
+(base) PS C:\Users\Thomas> anaconda-navigator
 ```
 
 in `Anaconda Powershell Prompt` (Windows) or `Terminal` (macOS, Linux).
