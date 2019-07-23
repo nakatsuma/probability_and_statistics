@@ -6,11 +6,11 @@ Teruo Nakatsuma (Faculty of Economics, Keio University, Japan)
 
 ---
 
-- [How to set up Python and necessary packages](#How-to-set-up-Python-and-necessary-packages)
-  - [Step 1: Installing Anaconda](#Step-1-Installing-Anaconda)
-  - [Step 2: Creating an environment](#Step-2-Creating-an-environment)
-- [How to start JupyterLab](#How-to-start-JupyterLab)
-- [Jupyter Notebooks and related files in `notebook-a`](#Jupyter-Notebooks-and-related-files-in-notebook-a)
+- [How to set up Python and necessary packages](#how-to-set-up-python-and-necessary-packages)
+  - [Step 1: Installing Anaconda](#step-1-installing-anaconda)
+  - [Step 2: Creating an environment](#step-2-creating-an-environment)
+- [How to start JupyterLab](#how-to-start-jupyterlab)
+- [Jupyter Notebooks and related files in `notebook-a`](#jupyter-notebooks-and-related-files-in-notebook-a)
 
 ---
 
@@ -24,17 +24,17 @@ I strongly recommend using [Anaconda](https://www.anaconda.com/). It can install
 
 2. Download an Anaconda installer (Windows, macOS or Linux) from [here](https://www.anaconda.com/distribution/). Choose a Python 3 installer.
 
-3. Doubleclick the installer and keep clicking `Continue`, `Next` or `Ok`.
+3. Doubleclick the installer and follow the instruction on the screen. Do not change the default settings.
 
 ### Step 2: Creating an environment
 
 Start `Anaconda Powershell Prompt` (Windows) or `Terminal` (macOS, Linux) and type
 
 ```IPython
-(base) PS C:\Users\Thomas> conda update --all
+(base) PS C:\Users\Thomas> conda update conda
 ```
 
-This will update all packages in Anaconda. Then type
+This will update conda (package manager) in Anaconda. Then type
 
 ```IPython
 (base) PS C:\Users\Thomas> conda create -n bayes jupyterlab seaborn spyder conda-forge::pymc3 conda-forge::arviz
