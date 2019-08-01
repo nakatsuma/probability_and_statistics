@@ -10,6 +10,8 @@ Teruo Nakatsuma (Faculty of Economics, Keio University, Japan)
   - [Step 1: Installing Anaconda](#step-1-installing-anaconda)
   - [Step 2: Creating an environment](#step-2-creating-an-environment)
 - [How to start JupyterLab](#how-to-start-jupyterlab)
+  - [Method 1: From the command line](#method-1-from-the-command-line)
+  - [Method 2: From Anaconda Navigator](#method-2-from-anaconda-navigator)
 - [Jupyter Notebooks and related files in `notebook-a`](#jupyter-notebooks-and-related-files-in-notebook-a)
 
 ---
@@ -64,6 +66,26 @@ Now you are ready for Python!
 
 ## How to start JupyterLab
 
+### Method 1: From the command line
+
+Start `Anaconda Powershell Prompt` (Windows) or `Terminal` (macOS, Linux) and type
+
+```IPython
+(base) PS C:\Users\Thomas> conda activate bayes
+```
+
+Then type
+
+```IPython
+(bayes) PS C:\Users\Thomas> jupyter lab
+```
+
+Your default browser will pop up. Click the `Python (Bayes)` button to create a Jupyter notebook.
+
+![Anaconda Navigator](Screenshot-JupyterLab.png)
+
+### Method 2: From Anaconda Navigator
+
 Start `Anaconda Navigator`. You may find it in `Start Menu` (Windows) or `Launchpad` (macOS). Alternatively you just type
 
 ```IPython
@@ -75,10 +97,6 @@ in `Anaconda Powershell Prompt` (Windows) or `Terminal` (macOS, Linux).
 Click the `Launch` button in the `JupyterLab` panel.
 
 ![Anaconda Navigator](Screenshot-AnacondaNavigator.png)
-
-Your default browser will pop up. Click the `Python (Bayes)` button to create a Jupyter notebook.
-
-![Anaconda Navigator](Screenshot-JupyterLab.png)
 
 ---
 
