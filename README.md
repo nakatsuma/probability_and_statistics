@@ -13,6 +13,7 @@ Teruo Nakatsuma (Faculty of Economics, Keio University, Japan)
   - [Method 1: From the command line](#method-1-from-the-command-line)
   - [Method 2: From Anaconda Navigator](#method-2-from-anaconda-navigator)
 - [Jupyter Notebooks and related files in `notebook-a`](#jupyter-notebooks-and-related-files-in-notebook-a)
+- [Jupyter Notebooks and related files in `notebook-b`](#jupyter-notebooks-and-related-files-in-notebook-b)
 
 ---
 
@@ -121,5 +122,15 @@ Click the `Launch` button in the `JupyterLab` panel.
 | ships.csv                      | ships damage data                         |
 | ships_damage.ipynb             | Poisson regression model of ships damage  |
 | wage_education.ipynb           | relationship between wage and eduaction   |
+
+---
+
+## Jupyter Notebooks and related files in `notebook-b`
+
+| file name | description |
+|:-------------------------------|:------------------------------------------|
+| large_sample.ipynb             | consistency and asymptotic normality      |
+| probability_distribution.ipynb | examples of probability distributions     |
+| skewness_kurtosis.ipynb        | skewness and kurtosis                     |
 
 ---
