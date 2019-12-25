@@ -12,8 +12,8 @@ Teruo Nakatsuma (Faculty of Economics, Keio University, Japan)
 - [How to start JupyterLab](#how-to-start-jupyterlab)
   - [Method 1: From the command line](#method-1-from-the-command-line)
   - [Method 2: From Anaconda Navigator](#method-2-from-anaconda-navigator)
-- [Jupyter Notebooks and related files in `notebook-a`](#jupyter-notebooks-and-related-files-in-notebook-a)
-- [Jupyter Notebooks and related files in `notebook-b`](#jupyter-notebooks-and-related-files-in-notebook-b)
+- [Jupyter Notebooks and related files in notebook-a](#jupyter-notebooks-and-related-files-in-notebook-a)
+- [Jupyter Notebooks and related files in notebook-b](#jupyter-notebooks-and-related-files-in-notebook-b)
 
 ---
 
@@ -40,7 +40,7 @@ Start `Anaconda Powershell Prompt` (Windows) or `Terminal` (macOS, Linux) and ty
 This will update conda (package manager) in Anaconda. Then type
 
 ```IPython
-(base) PS C:\Users\Thomas> conda create -n bayes jupyterlab seaborn spyder conda-forge::pymc3 conda-forge::arviz
+(base) PS C:\Users\Thomas> conda create -n bayes jupyterlab seaborn spyder conda-forge::pymc3
 ```
 
 This will create the enviromnemt for PyMC. Then type
@@ -130,7 +130,9 @@ Click the `Launch` button in the `JupyterLab` panel.
 | file name | description |
 |:-------------------------------|:------------------------------------------|
 | large_sample.ipynb             | consistency and asymptotic normality      |
+| markovchian.ipynb              | Markov chain                              |
 | probability_distribution.ipynb | examples of probability distributions     |
+| python_introduction.ipynb      | simple example of Bayes' theorem          |
 | skewness_kurtosis.ipynb        | skewness and kurtosis                     |
 
 ---
