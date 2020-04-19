@@ -9,11 +9,11 @@ Teruo Nakatsuma (Faculty of Economics, Keio University, Japan)
 - [How to set up Python and necessary packages](#how-to-set-up-python-and-necessary-packages)
   - [Step 1: Installing Anaconda](#step-1-installing-anaconda)
   - [Step 2: Creating an environment](#step-2-creating-an-environment)
-- [How to start JupyterLab](#how-to-start-jupyterlab)
+- [How to start Jupyter Notebook](#how-to-start-jupyter-notebook)
   - [Method 1: From the command line](#method-1-from-the-command-line)
   - [Method 2: From Anaconda Navigator](#method-2-from-anaconda-navigator)
-- [Jupyter Notebooks and related files in notebook-a](#jupyter-notebooks-and-related-files-in-notebook-a)
-- [Jupyter Notebooks and related files in notebook-b](#jupyter-notebooks-and-related-files-in-notebook-b)
+- [Jupyter Notebooks and related files in `notebook-a`](#jupyter-notebooks-and-related-files-in-notebook-a)
+- [Jupyter Notebooks and related files in `notebook-b`](#jupyter-notebooks-and-related-files-in-notebook-b)
 
 ---
 
@@ -40,7 +40,7 @@ Start `Anaconda Powershell Prompt` (Windows) or `Terminal` (macOS, Linux) and ty
 This will update conda (package manager) in Anaconda. Then type
 
 ```IPython
-(base) PS C:\Users\Thomas> conda create -n bayes jupyterlab seaborn spyder conda-forge::pymc3
+(base) PS C:\Users\Thomas> conda create -n bayes bokeh jupyterlab seaborn spyder conda-forge::pymc3
 ```
 
 This will create the enviromnemt for PyMC. Then type
@@ -65,7 +65,7 @@ Now you are ready for Python!
 
 ---
 
-## How to start JupyterLab
+## How to start Jupyter Notebook
 
 ### Method 1: From the command line
 
@@ -78,12 +78,13 @@ Start `Anaconda Powershell Prompt` (Windows) or `Terminal` (macOS, Linux) and ty
 Then type
 
 ```IPython
-(bayes) PS C:\Users\Thomas> jupyter lab
+(bayes) PS C:\Users\Thomas> jupyter notebook
 ```
 
-Your default browser will pop up. Click the `Python (Bayes)` button to create a Jupyter notebook.
+Your default browser will pop up.
+<!-- Click the `Python (Bayes)` button to create a Jupyter notebook. -->
 
-![Anaconda Navigator](Screenshot-JupyterLab.png)
+<!-- ![Anaconda Navigator](Screenshot-JupyterLab.png) -->
 
 ### Method 2: From Anaconda Navigator
 
@@ -95,9 +96,9 @@ Start `Anaconda Navigator`. You may find it in `Start Menu` (Windows) or `Launch
 
 in `Anaconda Powershell Prompt` (Windows) or `Terminal` (macOS, Linux).
 
-Click the `Launch` button in the `JupyterLab` panel.
+Click the `Launch` button in the `Jupyter Notebook` panel.
 
-![Anaconda Navigator](Screenshot-AnacondaNavigator.png)
+<!-- ![Anaconda Navigator](Screenshot-AnacondaNavigator.png) -->
 
 ---
 
