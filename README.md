@@ -10,8 +10,7 @@ Teruo Nakatsuma (Faculty of Economics, Keio University, Japan)
   - [Step 1: Installing Anaconda](#step-1-installing-anaconda)
   - [Step 2: Creating an environment](#step-2-creating-an-environment)
 - [How to start Jupyter Notebook](#how-to-start-jupyter-notebook)
-  - [Method 1: From the command line](#method-1-from-the-command-line)
-  - [Method 2: From Anaconda Navigator](#method-2-from-anaconda-navigator)
+  - [Troubleshooting](#troubleshooting)
 - [Jupyter Notebooks and related files in `notebook-a`](#jupyter-notebooks-and-related-files-in-notebook-a)
 - [Jupyter Notebooks and related files in `notebook-b`](#jupyter-notebooks-and-related-files-in-notebook-b)
 
@@ -40,7 +39,7 @@ Start `Anaconda Powershell Prompt` (Windows) or `Terminal` (macOS, Linux) and ty
 This will update conda (package manager) in Anaconda. Then type
 
 ```IPython
-(base) PS C:\Users\Thomas> conda create -n bayes bokeh jupyterlab seaborn spyder conda-forge::pymc3
+(base) PS C:\Users\Thomas> conda create -n bayes bokeh jupyterlab seaborn spyder nodejs conda-forge::pymc3
 ```
 
 This will create the enviromnemt for PyMC. Then type
@@ -67,7 +66,7 @@ Now you are ready for Python!
 
 ## How to start Jupyter Notebook
 
-### Method 1: From the command line
+<!--- ### Method 1: From the command line -->
 
 Start `Anaconda Powershell Prompt` (Windows) or `Terminal` (macOS, Linux) and type
 
@@ -78,15 +77,26 @@ Start `Anaconda Powershell Prompt` (Windows) or `Terminal` (macOS, Linux) and ty
 Then type
 
 ```IPython
-(bayes) PS C:\Users\Thomas> jupyter notebook
+(bayes) PS C:\Users\Thomas> jupyter notebook --port=8888
 ```
 
 Your default browser will pop up.
+
+### Troubleshooting
+
+For a bokeh interactive plot to work properly, the Jupyter Notebook server must use `port 8888` which is set by default. In case this port is occupied by another Jupyter Notebook server, you need to stop it by typing
+
+```IPython
+(bayes) PS C:\Users\Thomas> jupyter notebook stop
+```
+
+before you open a new Jupyter Notebook. If this does not work, reboot your PC.
+
 <!-- Click the `Python (Bayes)` button to create a Jupyter notebook. -->
 
 <!-- ![Anaconda Navigator](Screenshot-JupyterLab.png) -->
 
-### Method 2: From Anaconda Navigator
+<!--- ### Method 2: From Anaconda Navigator
 
 Start `Anaconda Navigator`. You may find it in `Start Menu` (Windows) or `Launchpad` (macOS). Alternatively you just type
 
@@ -97,6 +107,7 @@ Start `Anaconda Navigator`. You may find it in `Start Menu` (Windows) or `Launch
 in `Anaconda Powershell Prompt` (Windows) or `Terminal` (macOS, Linux).
 
 Click the `Launch` button in the `Jupyter Notebook` panel.
+-->
 
 <!-- ![Anaconda Navigator](Screenshot-AnacondaNavigator.png) -->
 
@@ -106,16 +117,15 @@ Click the `Launch` button in the `Jupyter Notebook` panel.
 
 | file name | description |
 |:-------------------------------|:------------------------------------------|
-| bernoulli_inference.ipynb      | posterior inferernce on Bernoulli dist.   |
-| bernoulli_posterior.ipynb      | likelihood, prior and posterior dist.     |
 | Dimes.csv                      | weights of a sample of dimes              |
-| gaussian_inference.ipynb       | posterior inference on Gaussian dist.     |
+| example_bernoulli.ipynb        | posterior inferernce on Bernoulli dist.   |
+| example_normal.ipynb           | posterior inference on normal dist.       |
+| example_poisson.ipynb          | posterior inference on Poisson dist.      |
 | Housing.csv                    | sales prices of houses                    |
 | housing_price.ipynb            | hedonic price model of houses             |
 | labor_participation.ipynb      | logit model of labor participation        |
 | logit.ipynb                    | PyMC example of logit model               |
 | Mroz.csv                       | US women's labor paritication data        |
-| poisson_inference.ipynb        | posterior inference on Poisson dist.      |
 | poisson_regression.ipynb       | PyMC example of Poisson regression model  |
 | probit.ipynb                   | PyMC example of probit model              |
 | prussian.csv                   | Prussian army horse kick data             |
