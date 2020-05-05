@@ -9,8 +9,11 @@ Teruo Nakatsuma (Faculty of Economics, Keio University, Japan)
 - [How to set up Python and necessary packages](#how-to-set-up-python-and-necessary-packages)
   - [Step 1: Installing Anaconda](#step-1-installing-anaconda)
   - [Step 2: Creating an environment](#step-2-creating-an-environment)
+    - [For Windows users](#for-windows-users)
+    - [For macOS/Linux users](#for-macoslinux-users)
+    - [Troubleshooting](#troubleshooting)
 - [How to start Jupyter Notebook](#how-to-start-jupyter-notebook)
-  - [Troubleshooting](#troubleshooting)
+  - [Troubleshooting](#troubleshooting-1)
 - [Jupyter Notebooks and related files in `notebook-a`](#jupyter-notebooks-and-related-files-in-notebook-a)
 - [Jupyter Notebooks and related files in `notebook-b`](#jupyter-notebooks-and-related-files-in-notebook-b)
 
@@ -30,7 +33,11 @@ I strongly recommend using [Anaconda](https://www.anaconda.com/). It can install
 
 ### Step 2: Creating an environment
 
-Start `Anaconda Powershell Prompt` (Windows) or `Terminal` (macOS, Linux) and type
+---
+
+#### For Windows users
+
+Start `Anaconda Powershell Prompt` (Windows)
 
 ```IPython
 (base) PS C:\Users\Thomas> conda update conda
@@ -39,7 +46,7 @@ Start `Anaconda Powershell Prompt` (Windows) or `Terminal` (macOS, Linux) and ty
 This will update conda (package manager) in Anaconda. Then type
 
 ```IPython
-(base) PS C:\Users\Thomas> conda create -n bayes python=3.7 bokeh jupyterlab seaborn spyder nodejs conda-forge::pymc3
+(base) PS C:\Users\Thomas> conda create -n bayes python=3.7 bokeh jupyterlab seaborn spyder nodej
 ```
 
 This will create the enviromnemt for PyMC. Then type
@@ -54,6 +61,12 @@ You will notice that the prompt is altered as
 (bayes) PS C:\Users\Thomas>
 ```
 
+Then install PyMC via pip.
+
+```IPython
+(bayes) PS C:\Users\Thomas> pip install pymc3
+```
+
 Finally type
 
 ```IPython
@@ -61,6 +74,54 @@ Finally type
 ```
 
 Now you are ready for Python!
+
+---
+
+#### For macOS/Linux users
+
+Start `Terminal` (macOS, Linux) and type
+
+```IPython
+(base) Thomas> conda update conda
+```
+
+This will update conda (package manager) in Anaconda. Then type
+
+```IPython
+(base) MacBookPro :~ Thomas$ conda create -n bayes python=3.7 bokeh jupyterlab seaborn spyder nodejs pymc3
+```
+
+This will create the enviromnemt for PyMC. Then type
+
+```IPython
+(base) MacBookPro :~ Thomas$ conda activate bayes
+```
+
+You will notice that the prompt is altered as
+
+```IPython
+(bayes) MacBookPro :~ Thomas$
+```
+
+Finally type
+
+```IPython
+(bayes) MacBookPro :~ Thomas$ python -m ipykernel install --user --name bayes --display-name "Python (Bayes)"
+```
+
+Now you are ready for Python!
+
+---
+
+#### Troubleshooting
+
+When the installing process is failed, you must remove the environment before you try to install it again. To do so, type
+
+```IPython
+(base) PS C:\Users\Thomas> conda env remove -n bayes
+```
+
+Then redo the installation.
 
 ---
 
