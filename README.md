@@ -82,31 +82,31 @@ Now you are ready for Python!
 Start `Terminal` (macOS, Linux) and type
 
 ```IPython
-(base) Thomas> conda update conda
+(base) MacBook-Pro :~ Thomas% conda update conda
 ```
 
 This will update conda (package manager) in Anaconda. Then type
 
 ```IPython
-(base) MacBookPro :~ Thomas$ conda create -n bayes python=3.7 bokeh jupyterlab seaborn spyder nodejs pymc3
+(base) MacBook-Pro :~ Thomas% conda create -n bayes python=3.7 bokeh jupyterlab seaborn spyder nodejs pymc3
 ```
 
 This will create the enviromnemt for PyMC. Then type
 
 ```IPython
-(base) MacBookPro :~ Thomas$ conda activate bayes
+(base) MacBook-Pro :~ Thomas% conda activate bayes
 ```
 
 You will notice that the prompt is altered as
 
 ```IPython
-(bayes) MacBookPro :~ Thomas$
+(bayes) MacBook-Pro :~ Thomas%
 ```
 
 Finally type
 
 ```IPython
-(bayes) MacBookPro :~ Thomas$ python -m ipykernel install --user --name bayes --display-name "Python (Bayes)"
+(bayes) MacBook-Pro :~ Thomas% python -m ipykernel install --user --name bayes --display-name "Python (Bayes)"
 ```
 
 Now you are ready for Python!
