@@ -46,7 +46,7 @@ Start `Anaconda Powershell Prompt` (Windows)
 This will update conda (package manager) in Anaconda. Then type
 
 ```IPython
-(base) PS C:\Users\Thomas> conda create -n bayes python=3.7 bokeh jupyterlab seaborn spyder nodej
+(base) PS C:\Users\Thomas> conda create -n bayes python=3.7 bokeh jupyterlab seaborn spyder nodejs
 ```
 
 This will create the enviromnemt for PyMC. Then type
