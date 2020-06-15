@@ -89,7 +89,7 @@ and remove `bayes` by typing
 (base) PS C:\Users\Thomas> conda env remove -n bayes
 ```
 
-Then redo the installation.
+Then redo **Step 2**.
 
 #### 2. (macOS) Installing Command Line Tools for Xcode
 
