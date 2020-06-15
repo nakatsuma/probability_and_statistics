@@ -77,7 +77,13 @@ Now you are ready for Python!
 
 #### 1. Retry installation
 
-When the installing process is failed, you must remove the environment before you try to install it again. To do so, type
+If you encounter any errors during the installation process, go back to the default environment by typing
+
+```IPython
+(bayes) PS C:\Users\Thomas> conda deactivate
+```
+
+and remove the environment by typing
 
 ```IPython
 (base) PS C:\Users\Thomas> conda env remove -n bayes
