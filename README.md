@@ -9,11 +9,11 @@ Teruo Nakatsuma (Faculty of Economics, Keio University, Japan)
 - [How to set up Python and necessary packages](#how-to-set-up-python-and-necessary-packages)
   - [Step 1: Installing Anaconda](#step-1-installing-anaconda)
   - [Step 2: Creating an environment](#step-2-creating-an-environment)
-    - [For Windows users](#for-windows-users)
-    - [For macOS/Linux users](#for-macoslinux-users)
-    - [Troubleshooting](#troubleshooting)
+  - [Tips for Troubleshooting](#tips-for-troubleshooting)
+    - [1. Retry installation](#1-retry-installation)
+    - [2. (macOS) Installing Command Line Tools for Xcode](#2-macos-installing-command-line-tools-for-xcode)
 - [How to start Jupyter Notebook](#how-to-start-jupyter-notebook)
-  - [Troubleshooting](#troubleshooting-1)
+  - [Troubleshooting](#troubleshooting)
 - [Jupyter Notebooks and related files in `notebook-a`](#jupyter-notebooks-and-related-files-in-notebook-a)
 - [Jupyter Notebooks and related files in `notebook-b`](#jupyter-notebooks-and-related-files-in-notebook-b)
 
@@ -33,11 +33,7 @@ I strongly recommend using [Anaconda](https://www.anaconda.com/). It can install
 
 ### Step 2: Creating an environment
 
----
-
-#### For Windows users
-
-Start `Anaconda Powershell Prompt` (Windows)
+Start `Anaconda Powershell Prompt` (Windows) or `Terminal` (macOS, Linux) and type
 
 ```IPython
 (base) PS C:\Users\Thomas> conda update conda
@@ -77,43 +73,9 @@ Now you are ready for Python!
 
 ---
 
-#### For macOS/Linux users
+### Tips for Troubleshooting
 
-Start `Terminal` (macOS, Linux) and type
-
-```IPython
-(base) MacBook-Pro :~ Thomas% conda update conda
-```
-
-This will update conda (package manager) in Anaconda. Then type
-
-```IPython
-(base) MacBook-Pro :~ Thomas% conda create -n bayes python=3.7 bokeh jupyterlab seaborn spyder nodejs pymc3
-```
-
-This will create the enviromnemt for PyMC. Then type
-
-```IPython
-(base) MacBook-Pro :~ Thomas% conda activate bayes
-```
-
-You will notice that the prompt is altered as
-
-```IPython
-(bayes) MacBook-Pro :~ Thomas%
-```
-
-Finally type
-
-```IPython
-(bayes) MacBook-Pro :~ Thomas% python -m ipykernel install --user --name bayes --display-name "Python (Bayes)"
-```
-
-Now you are ready for Python!
-
----
-
-#### Troubleshooting
+#### 1. Retry installation
 
 When the installing process is failed, you must remove the environment before you try to install it again. To do so, type
 
@@ -122,6 +84,20 @@ When the installing process is failed, you must remove the environment before yo
 ```
 
 Then redo the installation.
+
+#### 2. (macOS) Installing Command Line Tools for Xcode
+
+In case the computer says `Command Line Tools for Xcode` is missing,  install it as follows.
+
+1. Install `Xcode` from App Store.
+
+2. Start `Xcode`. If a pop-up window asks you to install additional tools, follow the instruction. Quit `Xcode`.
+
+3. Start `Terminal` and install `Command Line Tools for Xcode` by typing
+
+``` IPython
+(base) MacBook-Pro :~ Thomas% sudo xcode-select --install
+```
 
 ---
 
