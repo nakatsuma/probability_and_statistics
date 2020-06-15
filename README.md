@@ -83,7 +83,7 @@ If you encounter any errors during the installation process, go back to the defa
 (bayes) PS C:\Users\Thomas> conda deactivate
 ```
 
-and remove the environment by typing
+and remove `bayes` by typing
 
 ```IPython
 (base) PS C:\Users\Thomas> conda env remove -n bayes
