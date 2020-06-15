@@ -9,11 +9,11 @@ Teruo Nakatsuma (Faculty of Economics, Keio University, Japan)
 - [How to set up Python and necessary packages](#how-to-set-up-python-and-necessary-packages)
   - [Step 1: Installing Anaconda](#step-1-installing-anaconda)
   - [Step 2: Creating an environment](#step-2-creating-an-environment)
-  - [Tips for Troubleshooting](#tips-for-troubleshooting)
+  - [Troubleshooting about installation](#troubleshooting-about-installation)
     - [1. Retry installation](#1-retry-installation)
     - [2. (macOS) Installing Command Line Tools for Xcode](#2-macos-installing-command-line-tools-for-xcode)
 - [How to start Jupyter Notebook](#how-to-start-jupyter-notebook)
-  - [Troubleshooting](#troubleshooting)
+  - [Troubleshooting about Jupyter Notebook](#troubleshooting-about-jupyter-notebook)
 - [Jupyter Notebooks and related files in `notebook-a`](#jupyter-notebooks-and-related-files-in-notebook-a)
 - [Jupyter Notebooks and related files in `notebook-b`](#jupyter-notebooks-and-related-files-in-notebook-b)
 
@@ -42,7 +42,7 @@ Start `Anaconda Powershell Prompt` (Windows) or `Terminal` (macOS, Linux) and ty
 This will update conda (package manager) in Anaconda. Then type
 
 ```IPython
-(base) PS C:\Users\Thomas> conda create -n bayes python=3.7 bokeh jupyterlab seaborn spyder nodejs
+(base) PS C:\Users\Thomas> conda create -n bayes python=3.7 bokeh jupyterlab seaborn spyder
 ```
 
 This will create the enviromnemt for PyMC. Then type
@@ -73,7 +73,7 @@ Now you are ready for Python!
 
 ---
 
-### Tips for Troubleshooting
+### Troubleshooting about installation
 
 #### 1. Retry installation
 
@@ -119,7 +119,7 @@ Then type
 
 Your default browser will pop up.
 
-### Troubleshooting
+### Troubleshooting about Jupyter Notebook
 
 For a bokeh interactive plot to work properly, the Jupyter Notebook server must use `port 8888` which is set by default. In case this port is occupied by another Jupyter Notebook server, you need to stop it by typing
 
