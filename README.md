@@ -63,6 +63,12 @@ Then install PyMC via pip.
 (bayes) PS C:\Users\Thomas> pip install pymc3
 ```
 
+*If the pip installation of PyMC fails, try the following command.*
+
+```IPython
+(bayes) MacBook-Pro :~ Thomas% conda install -c conda-forge pymc3
+```
+
 Finally type
 
 ```IPython
