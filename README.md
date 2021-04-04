@@ -23,6 +23,10 @@ Teruo Nakatsuma (Faculty of Economics, Keio University, Japan)
 
 I strongly recommend using [Anaconda](https://www.anaconda.com/). It can install Python along with numerous essential packages at once and allows us to manage those packages flexibly.
 
+### Notice for Mac users about an Apple Silicon Chip
+
+Unfortunately, PyMC cannot be installed on a Mac with an Apple Silicon chip (e.g., M1) yet. Please wait for a while until it supports the chip.
+
 ### Step 1: Installing Anaconda
 
 1. If you have an older Anaconda on your PC, uninstall it completely by folloiwng [instructions](https://docs.anaconda.com/anaconda/install/uninstall/).
