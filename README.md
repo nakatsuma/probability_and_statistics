@@ -7,6 +7,7 @@ Teruo Nakatsuma (Faculty of Economics, Keio University, Japan)
 ---
 
 - [How to set up Python and necessary packages](#how-to-set-up-python-and-necessary-packages)
+  - [Notice for Mac users about an Apple Silicon Chip](#notice-for-mac-users-about-an-apple-silicon-chip)
   - [Step 1: Installing Anaconda](#step-1-installing-anaconda)
   - [Step 2: Creating an environment](#step-2-creating-an-environment)
   - [Troubleshooting about installation](#troubleshooting-about-installation)
@@ -170,22 +171,24 @@ Click the `Launch` button in the `Jupyter Notebook` panel.
 
 | file name | description |
 |:-------------------------------|:------------------------------------------|
+| Cholera.csv                    | London cholera pandemic data              |
+| cholera.ipynb                  | Bernoulli model of the cholera data       |
 | Dimes.csv                      | weights of a sample of dimes              |
-| example_bernoulli.ipynb        | posterior inferernce on Bernoulli dist.   |
+| example_bernoulli.ipynb        | posterior inference on Bernoulli dist.    |
 | example_normal.ipynb           | posterior inference on normal dist.       |
 | example_poisson.ipynb          | posterior inference on Poisson dist.      |
 | Housing.csv                    | sales prices of houses                    |
 | housing_price.ipynb            | hedonic price model of houses             |
 | labor_participation.ipynb      | logit model of labor participation        |
 | logit.ipynb                    | PyMC example of logit model               |
-| Mroz.csv                       | US women's labor paritication data        |
+| Mroz.csv                       | US women's labor participation data       |
 | poisson_regression.ipynb       | PyMC example of Poisson regression model  |
 | probit.ipynb                   | PyMC example of probit model              |
 | prussian.csv                   | Prussian army horse kick data             |
 | regression.ipynb               | PyMC example of regression analysis       |
 | ships.csv                      | ships damage data                         |
 | ships_damage.ipynb             | Poisson regression model of ships damage  |
-| wage_education.ipynb           | relationship between wage and eduaction   |
+| wage_education.ipynb           | relationship between wage and education   |
 
 ---
 
