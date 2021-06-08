@@ -171,6 +171,7 @@ Click the `Launch` button in the `Jupyter Notebook` panel.
 
 | file name                 | description                              |
 |:--------------------------|:-----------------------------------------|
+| ar1_process.ipynb         | convergence of the AR(1) process         |
 | Cholera.csv               | London cholera pandemic data             |
 | cholera.ipynb             | Bernoulli model of the cholera data      |
 | Dimes.csv                 | weights of a sample of dimes             |
