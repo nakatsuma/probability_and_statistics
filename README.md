@@ -7,9 +7,9 @@ Teruo Nakatsuma (Faculty of Economics, Keio University, Japan)
 ---
 
 - [How to set up Python and necessary packages](#how-to-set-up-python-and-necessary-packages)
-  - [Notice for Mac users about an Apple Silicon Chip](#notice-for-mac-users-about-an-apple-silicon-chip)
   - [Step 1: Installing Anaconda](#step-1-installing-anaconda)
-  - [Step 2: Creating an environment](#step-2-creating-an-environment)
+  - [Step 2: (Windows) Installing MinGW](#step-2-windows-installing-mingw)
+  - [Step 3: Creating an environment](#step-3-creating-an-environment)
   - [Troubleshooting about installation](#troubleshooting-about-installation)
     - [1. Retry installation](#1-retry-installation)
     - [2. (macOS) Installing Command Line Tools for Xcode](#2-macos-installing-command-line-tools-for-xcode)
@@ -24,60 +24,50 @@ Teruo Nakatsuma (Faculty of Economics, Keio University, Japan)
 
 I strongly recommend using [Anaconda](https://www.anaconda.com/). It can install Python along with numerous essential packages at once and allows us to manage those packages flexibly.
 
-### Notice for Mac users about an Apple Silicon Chip
-
-Unfortunately, PyMC cannot be installed on a Mac with an Apple Silicon chip (e.g., M1) yet. Please wait for a while until it supports the chip.
-
 ### Step 1: Installing Anaconda
 
 1. If you have an older Anaconda on your PC, uninstall it completely by folloiwng [instructions](https://docs.anaconda.com/anaconda/install/uninstall/).
 
-2. Download an Anaconda installer (Windows, macOS or Linux) from [here](https://www.anaconda.com/distribution/). Choose a Python 3 installer.
+2. Download an Anaconda installer (Windows, macOS or Linux) from [here](https://www.anaconda.com/products/distribution). Choose an installer for your OS.
 
 3. Doubleclick the installer and follow the instructions on the screen. Do not change the default settings.
 
-### Step 2: Creating an environment
+### Step 2: (Windows) Installing MinGW
+
+For a Windows PC, you need to install MinGW. Follow the [instructions](https://github.com/pymc-devs/pymc/wiki/Installation-Guide-(Windows)).
+
+### Step 3: Creating an environment
 
 Start `Anaconda Powershell Prompt` (Windows) or `Terminal` (macOS, Linux) and type
 
 ```IPython
-(base) PS C:\Users\Thomas> conda update conda
+conda update conda
 ```
 
 This will update conda (package manager) in Anaconda. Then type
 
 ```IPython
-(base) PS C:\Users\Thomas> conda create -n bayes bokeh jupyterlab seaborn spyder
+conda create -n bayes jupyterlab seaborn bokeh jupyter_bokeh
 ```
 
-This will create the enviromnemt for PyMC. Then type
+This will create the environment for PyMC. Then type
 
 ```IPython
-(base) PS C:\Users\Thomas> conda activate bayes
+conda activate bayes
 ```
 
-You will notice that the prompt is altered as
+and
 
 ```IPython
-(bayes) PS C:\Users\Thomas>
+conda install -c conda-forge pymc3 theano-pymc mkl mkl-service
 ```
 
-Then install PyMC via pip.
-
-```IPython
-(bayes) PS C:\Users\Thomas> pip install pymc3
-```
-
-*If this pip installation fails, try the following command.*
-
-```IPython
-(bayes) PS C:\Users\Thomas> conda install -c conda-forge pymc3
-```
+*Note:* For an Apple Silicon Mac, you must drop `mkl` and `mkl-service` because it does not support Intel Math Kernel Library.
 
 Finally type
 
 ```IPython
-(bayes) PS C:\Users\Thomas> python -m ipykernel install --user --name bayes --display-name "Python (Bayes)"
+python -m ipykernel install --user --name bayes --display-name "Python (Bayes)"
 ```
 
 Now you are ready for Python!
@@ -91,16 +81,16 @@ Now you are ready for Python!
 If you encounter any errors during the installation process, go back to the default environment by typing
 
 ```IPython
-(bayes) PS C:\Users\Thomas> conda deactivate
+conda deactivate
 ```
 
 and remove `bayes` by typing
 
 ```IPython
-(base) PS C:\Users\Thomas> conda env remove -n bayes
+conda env remove -n bayes
 ```
 
-Then redo **Step 2**.
+Then redo **Step 3**.
 
 #### 2. (macOS) Installing Command Line Tools for Xcode
 
@@ -113,8 +103,10 @@ In case the computer says `Command Line Tools for Xcode` is missing,  install it
 3. Start `Terminal` and install `Command Line Tools for Xcode` by typing
 
 ``` IPython
-(base) MacBook-Pro :~ Thomas% sudo xcode-select --install
+sudo xcode-select --install
 ```
+
+If asked, type your login password.
 
 ---
 
@@ -125,23 +117,29 @@ In case the computer says `Command Line Tools for Xcode` is missing,  install it
 Start `Anaconda Powershell Prompt` (Windows) or `Terminal` (macOS, Linux) and type
 
 ```IPython
-(base) PS C:\Users\Thomas> conda activate bayes
+conda activate bayes
 ```
 
 Then type
 
 ```IPython
-(bayes) PS C:\Users\Thomas> jupyter notebook --port=8888
+jupyter notebook --port=8888
 ```
 
 Your default browser will pop up.
+
+Alternatively, you may use JupyerLab by typing
+
+```IPython
+jupyter lab --port=8888
+```
 
 ### Troubleshooting about Jupyter Notebook
 
 For a bokeh interactive plot to work properly, the Jupyter Notebook server must use `port 8888` which is set by default. In case this port is occupied by another Jupyter Notebook server, you need to stop it by typing
 
 ```IPython
-(bayes) PS C:\Users\Thomas> jupyter notebook stop
+jupyter notebook stop
 ```
 
 before you open a new Jupyter Notebook. If this does not work, reboot your PC.
