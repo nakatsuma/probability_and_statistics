@@ -24,6 +24,8 @@ Teruo Nakatsuma (Faculty of Economics, Keio University, Japan)
 
 I strongly recommend using [Anaconda](https://www.anaconda.com/). It can install Python along with numerous essential packages at once and allows us to manage those packages flexibly.
 
+*WARNING:* PyMC is not working on Macs with Apple Silicon chips at this moment. You need to use [Google Colaboratory](https://colab.research.google.com/) instead.
+
 ### Step 1: Installing Anaconda
 
 1. If you have an older Anaconda on your PC, uninstall it completely by folloiwng [instructions](https://docs.anaconda.com/anaconda/install/uninstall/).
@@ -61,8 +63,6 @@ and
 ```IPython
 conda install -c conda-forge pymc3 theano-pymc mkl mkl-service
 ```
-
-*Note:* For an Apple Silicon Mac, you must drop `mkl` and `mkl-service` because it does not support Intel Math Kernel Library.
 
 Finally type
 
@@ -112,7 +112,7 @@ If asked, type your login password.
 
 ## How to start Jupyter Notebook
 
-<!--- ### Method 1: From the command line -->
+<!-- ### Method 1: From the command line -->
 
 Start `Anaconda Powershell Prompt` (Windows) or `Terminal` (macOS, Linux) and type
 
