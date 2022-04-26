@@ -49,7 +49,7 @@ conda update conda
 This will update conda (package manager) in Anaconda. Then type
 
 ```IPython
-conda create -n bayes jupyterlab seaborn bokeh jupyter_bokeh
+conda create -n bayes jupyterlab seaborn bokeh
 ```
 
 This will create the environment for PyMC. Then type
@@ -61,7 +61,7 @@ conda activate bayes
 and
 
 ```IPython
-conda install -c conda-forge pymc3 theano-pymc mkl mkl-service
+conda install -c conda-forge jupyter_bokeh pymc3 theano-pymc mkl mkl-service
 ```
 
 Finally type
