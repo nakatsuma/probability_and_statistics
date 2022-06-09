@@ -8,8 +8,7 @@ Teruo Nakatsuma (Faculty of Economics, Keio University, Japan)
 
 - [How to set up Python and necessary packages](#how-to-set-up-python-and-necessary-packages)
   - [Step 1: Installing Anaconda](#step-1-installing-anaconda)
-  - [Step 2: (Windows) Installing MinGW](#step-2-windows-installing-mingw)
-  - [Step 3: Creating an environment](#step-3-creating-an-environment)
+  - [Step 2: Creating an environment](#step-2-creating-an-environment)
   - [Troubleshooting about installation](#troubleshooting-about-installation)
     - [1. Retry installation](#1-retry-installation)
     - [2. (macOS) Installing Command Line Tools for Xcode](#2-macos-installing-command-line-tools-for-xcode)
@@ -24,8 +23,6 @@ Teruo Nakatsuma (Faculty of Economics, Keio University, Japan)
 
 I strongly recommend using [Anaconda](https://www.anaconda.com/). It can install Python along with numerous essential packages at once and allows us to manage those packages flexibly.
 
-*WARNING:* PyMC is not working on Macs with Apple Silicon chips at this moment. You need to use [Google Colaboratory](https://colab.research.google.com/) instead.
-
 ### Step 1: Installing Anaconda
 
 1. If you have an older Anaconda on your PC, uninstall it completely by folloiwng [instructions](https://docs.anaconda.com/anaconda/install/uninstall/).
@@ -34,11 +31,7 @@ I strongly recommend using [Anaconda](https://www.anaconda.com/). It can install
 
 3. Doubleclick the installer and follow the instructions on the screen. Do not change the default settings.
 
-### Step 2: (Windows) Installing MinGW
-
-For a Windows PC, you need to install MinGW. Follow the [instructions](https://github.com/pymc-devs/pymc/wiki/Installation-Guide-(Windows)).
-
-### Step 3: Creating an environment
+### Step 2: Creating an environment
 
 Start `Anaconda Powershell Prompt` (Windows) or `Terminal` (macOS, Linux) and type
 
@@ -49,7 +42,7 @@ conda update conda
 This will update conda (package manager) in Anaconda. Then type
 
 ```IPython
-conda create -n bayes jupyterlab seaborn bokeh
+conda create -n bayes -c conda-forge jupyterlab seaborn bokeh jupyter_bokeh pymc
 ```
 
 This will create the environment for PyMC. Then type
@@ -58,13 +51,7 @@ This will create the environment for PyMC. Then type
 conda activate bayes
 ```
 
-and
-
-```IPython
-conda install -c conda-forge jupyter_bokeh pymc3 theano-pymc mkl mkl-service
-```
-
-Finally type
+and type
 
 ```IPython
 python -m ipykernel install --user --name bayes --display-name "Python (Bayes)"
@@ -90,7 +77,7 @@ and remove `bayes` by typing
 conda env remove -n bayes
 ```
 
-Then redo **Step 3**.
+Then redo **Step 2**.
 
 #### 2. (macOS) Installing Command Line Tools for Xcode
 
