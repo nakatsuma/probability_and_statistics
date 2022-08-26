@@ -42,7 +42,7 @@ conda update conda
 This will update conda (package manager) in Anaconda. Then type
 
 ```IPython
-conda create -n bayes -c conda-forge jupyterlab seaborn bokeh jupyter_bokeh pymc
+conda create -n bayes -c conda-forge jupyterlab seaborn bokeh jupyter_bokeh pymc python-graphviz
 ```
 
 This will create the environment for PyMC. Then type
