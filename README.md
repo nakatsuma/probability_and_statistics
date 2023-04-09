@@ -157,7 +157,6 @@ Click the `Launch` button in the `Jupyter Notebook` panel.
 | file name                 | description                              |
 |:--------------------------|:-----------------------------------------|
 | Cholera.csv               | London cholera pandemic data             |
-<!-- | Dimes.csv                 | weights of a sample of dimes             |-->
 | Mroz.csv                  | US women's labor participation data      |
 | StrikeDur.csv             | strikes duration data                    |
 | USStocksSW.csv            | monthly US stock returns data            |
@@ -178,7 +177,6 @@ Click the `Launch` button in the `Jupyter Notebook` panel.
 | ships_damage.ipynb        | Poisson regression model of ships damage |
 | ships.csv                 | ships damage data                        |
 | wage_education.ipynb      | relationship between wage and education  |
-<!-- | \*_gc.ipynb               | dataset is retrieved from `Rdataset`     | -->
 
 ---
 
