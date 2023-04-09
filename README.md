@@ -156,26 +156,29 @@ Click the `Launch` button in the `Jupyter Notebook` panel.
 
 | file name                 | description                              |
 |:--------------------------|:-----------------------------------------|
-| ar1_process.ipynb         | convergence of the AR(1) process         |
 | Cholera.csv               | London cholera pandemic data             |
+<!-- | Dimes.csv                 | weights of a sample of dimes             |-->
+| Mroz.csv                  | US women's labor participation data      |
+| StrikeDur.csv             | strikes duration data                    |
+| USStocksSW.csv            | monthly US stock returns data            |
+| ar1_process.ipynb         | convergence of the AR(1) process         |
 | cholera.ipynb             | Bernoulli model of the cholera data      |
-| Dimes.csv                 | weights of a sample of dimes             |
 | example_bernoulli.ipynb   | posterior inference on Bernoulli dist.   |
+| example_exponential.ipynb | posterior inference on exponential dist.|
 | example_normal.ipynb      | posterior inference on normal dist.      |
 | example_poisson.ipynb     | posterior inference on Poisson dist.     |
 | Housing.csv               | sales prices of houses                   |
 | housing_price.ipynb       | hedonic price model of houses            |
 | labor_participation.ipynb | logit model of labor participation       |
 | logit.ipynb               | PyMC example of logit model              |
-| Mroz.csv                  | US women's labor participation data      |
 | poisson_regression.ipynb  | PyMC example of Poisson regression model |
 | probit.ipynb              | PyMC example of probit model             |
 | prussian.csv              | Prussian army horse kick data            |
 | regression.ipynb          | PyMC example of regression analysis      |
-| ships.csv                 | ships damage data                        |
 | ships_damage.ipynb        | Poisson regression model of ships damage |
+| ships.csv                 | ships damage data                        |
 | wage_education.ipynb      | relationship between wage and education  |
-| \*_gc.ipynb               | dataset is retrieved from `Rdataset`     |
+<!-- | \*_gc.ipynb               | dataset is retrieved from `Rdataset`     | -->
 
 ---
 
@@ -183,8 +186,9 @@ Click the `Launch` button in the `Jupyter Notebook` panel.
 
 | file name | description |
 |:-------------------------------|:------------------------------------------|
+| bivariate_distribution.ipynb   | examples of bivariate distributions       |
 | large_sample.ipynb             | consistency and asymptotic normality      |
-| markovchian.ipynb              | Markov chain                              |
+| markovchain.ipynb              | Markov chain                              |
 | probability_distribution.ipynb | examples of probability distributions     |
 | python_introduction.ipynb      | simple example of Bayes' theorem          |
 | skewness_kurtosis.ipynb        | skewness and kurtosis                     |
