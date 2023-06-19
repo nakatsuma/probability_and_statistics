@@ -154,29 +154,31 @@ Click the `Launch` button in the `Jupyter Notebook` panel.
 
 ## Jupyter Notebooks and related files in `notebook-a`
 
-| file name                 | description                              |
-|:--------------------------|:-----------------------------------------|
-| Cholera.csv               | London cholera pandemic data             |
-| Mroz.csv                  | US women's labor participation data      |
-| StrikeDur.csv             | strikes duration data                    |
-| USStocksSW.csv            | monthly US stock returns data            |
-| ar1_process.ipynb         | convergence of the AR(1) process         |
-| cholera.ipynb             | Bernoulli model of the cholera data      |
-| example_bernoulli.ipynb   | posterior inference on Bernoulli dist.   |
-| example_exponential.ipynb | posterior inference on exponential dist.|
-| example_normal.ipynb      | posterior inference on normal dist.      |
-| example_poisson.ipynb     | posterior inference on Poisson dist.     |
-| Housing.csv               | sales prices of houses                   |
-| housing_price.ipynb       | hedonic price model of houses            |
-| labor_participation.ipynb | logit model of labor participation       |
-| logit.ipynb               | PyMC example of logit model              |
-| poisson_regression.ipynb  | PyMC example of Poisson regression model |
-| probit.ipynb              | PyMC example of probit model             |
-| prussian.csv              | Prussian army horse kick data            |
-| regression.ipynb          | PyMC example of regression analysis      |
-| ships_damage.ipynb        | Poisson regression model of ships damage |
-| ships.csv                 | ships damage data                        |
-| wage_education.ipynb      | relationship between wage and education  |
+| file name                  | description                              |
+|:---------------------------|:-----------------------------------------|
+| Cholera.csv                | London cholera pandemic data             |
+| Mroz.csv                   | US women's labor participation data      |
+| StrikeDur.csv              | strikes duration data                    |
+| USStocksSW.csv             | monthly US stock returns data            |
+| ar1_process.ipynb          | convergence of the AR(1) process         |
+| cholera.ipynb              | Bernoulli model of the cholera data      |
+| example_bernoulli.ipynb    | posterior inference on Bernoulli dist.   |
+| example_exponential.ipynb  | posterior inference on exponential dist. |
+| example_normal.ipynb       | posterior inference on normal dist.      |
+| example_poisson.ipynb      | posterior inference on Poisson dist.     |
+| exponential_duration.ipynb | exponential duration model               |
+| Housing.csv                | sales prices of houses                   |
+| housing_price.ipynb        | hedonic price model of houses            |
+| labor_participation.ipynb  | logit model of labor participation       |
+| logit.ipynb                | PyMC example of logit model              |
+| poisson_regression.ipynb   | PyMC example of Poisson regression model |
+| probit.ipynb               | PyMC example of probit model             |
+| prussian.csv               | Prussian army horse kick data            |
+| regression.ipynb           | PyMC example of regression analysis      |
+| ships_damage.ipynb         | Poisson regression model of ships damage |
+| ships.csv                  | ships damage data                        |
+| strikes_duration.ipynb.    | strikes duration                         |
+| wage_education.ipynb       | relationship between wage and education  |
 
 ---
 
