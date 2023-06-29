@@ -2,17 +2,17 @@
 .DS_Store
 .AppleDouble
 .LSOverride
- 
+
 # Icon must end with two \r
 Icon
- 
+
 # Thumbnails
 ._*
- 
+
 # Files that might appear on external disk
 .Spotlight-V100
 .Trashes
- 
+
 # Directories potentially created on remote AFP share
 .AppleDB
 .AppleDesktop
@@ -59,12 +59,12 @@ $RECYCLE.BIN/
 # Compiled MEX binaries (all platforms)
 *.mex*
 
-# Packaged app and toolbox files 
-*.mlappinstall 
-*.mltbx 
-  
-# Generated helpsearch folders 
-helpsearch*/ 
+# Packaged app and toolbox files
+*.mlappinstall
+*.mltbx
+
+# Generated helpsearch folders
+helpsearch*/
 
 # Simulink code generation folders
 slprj/
@@ -299,3 +299,14 @@ TSWLatexianTemp*
 
 # Visual Studio Code
 .vscode/
+
+# symbolic link
+Graphs
+TeXfiles
+
+# Emacs Lisp file
+*.el
+_region_.*
+
+# Jupyter-Python
+.ob-jupyter/
