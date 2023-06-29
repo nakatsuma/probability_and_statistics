@@ -300,10 +300,6 @@ TSWLatexianTemp*
 # Visual Studio Code
 .vscode/
 
-# symbolic link
-Graphs
-TeXfiles
-
 # Emacs Lisp file
 *.el
 _region_.*
