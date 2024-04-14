@@ -109,24 +109,28 @@ conda activate bayes
 
 Then type
 
-```IPython
+<!-- ```IPython
 jupyter notebook --port=8888
-```
-
-Your default browser will pop up.
-
-Alternatively, you may use JupyerLab by typing
+``` -->
 
 ```IPython
 jupyter lab --port=8888
 ```
+
+Your default browser will pop up.
+
+<!-- Alternatively, you may use JupyerLab by typing -->
+
+<!-- ```IPython
+jupyter lab --port=8888
+``` -->
 
 ### Troubleshooting about Jupyter Notebook
 
 For a bokeh interactive plot to work properly, the Jupyter Notebook server must use `port 8888` which is set by default. In case this port is occupied by another Jupyter Notebook server, you need to stop it by typing
 
 ```IPython
-jupyter notebook stop
+jupyter server stop
 ```
 
 before you open a new Jupyter Notebook. If this does not work, reboot your PC.
