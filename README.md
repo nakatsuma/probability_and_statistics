@@ -1,4 +1,4 @@
-# PROBABILITY AND STATISTICS A/B <!-- omit in toc -->
+# PROBABILITY AND STATISTICS A/B (MATHEMATICAL STATISTICS) <!-- omit in toc -->
 
 ## Course materials for PROBABILITY AND STATISTICS A/B <!-- omit in toc -->
 
