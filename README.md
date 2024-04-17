@@ -1,6 +1,6 @@
 # PROBABILITY AND STATISTICS A/B (MATHEMATICAL STATISTICS) <!-- omit in toc -->
 
-## Course materials for PROBABILITY AND STATISTICS A/B <!-- omit in toc -->
+## Course materials for PROBABILITY AND STATISTICS A/B (MATHEMATICAL STATISTICS)  <!-- omit in toc -->
 
 Teruo Nakatsuma (Faculty of Economics, Keio University, Japan)
 
