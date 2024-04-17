@@ -27,7 +27,7 @@ I strongly recommend using [Anaconda](https://www.anaconda.com/). It can install
 
 1. If you have an older Anaconda on your PC, uninstall it completely by folloiwng [instructions](https://docs.anaconda.com/anaconda/install/uninstall/).
 
-2. Download an Anaconda installer (Windows, macOS or Linux) from [here](https://www.anaconda.com/products/distribution). Choose an installer for your OS.
+2. Download an Anaconda installer (Windows, macOS or Linux) from [here](https://www.anaconda.com/products/distribution). Choose an installer for your OS. For macOS, you should check whether Intel chip or Apple Silicon chip is used and download the corresponding installer.
 
 3. Doubleclick the installer and follow the instructions on the screen. Do not change the default settings.
 
@@ -41,6 +41,12 @@ conda update conda
 
 This will update conda (package manager) in Anaconda. Then type
 
+(Windows)
+```IPython
+conda create -n bayes -c conda-forge jupyterlab seaborn bokeh jupyter_bokeh pymc python-graphviz
+```
+
+(macOS)
 ```IPython
 conda create -n bayes -c conda-forge jupyterlab seaborn bokeh jupyter_bokeh pymc numpyro python-graphviz
 ```
