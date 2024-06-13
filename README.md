@@ -23,6 +23,16 @@ Teruo Nakatsuma (Faculty of Economics, Keio University, Japan)
 
 I strongly recommend using [Anaconda](https://www.anaconda.com/). It can install Python along with numerous essential packages at once and allows us to manage those packages flexibly.
 
+### Step 0: For Windows PC users only
+
+Download and install [Microsoft Visual C++ Redistributable](https://learn.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022). There are three versions:
+
+- [ARM64](https://aka.ms/vs/17/release/vc_redist.arm64.exe)
+- [X86](https://aka.ms/vs/17/release/vc_redist.x86.exe)
+- [X64](https://aka.ms/vs/17/release/vc_redist.x64.exe)
+
+If your PC's CPU is manufactured by Intel or AMD, the X64 version is suitable.
+
 ### Step 1: Installing Anaconda
 
 1. If you have an older Anaconda on your PC, uninstall it completely by folloiwng [instructions](https://docs.anaconda.com/anaconda/install/uninstall/).
@@ -39,17 +49,23 @@ Start `Anaconda Powershell Prompt` (Windows) or `Terminal` (macOS, Linux) and ty
 conda update conda
 ```
 
+(Optional) Update all packages by typing
+
+```IPython
+conda update -n base --all
+```
+
 This will update conda (package manager) in Anaconda. Then type
 
-(Windows)
+<!-- (Windows) -->
 ```IPython
 conda create -n bayes -c conda-forge jupyterlab seaborn bokeh jupyter_bokeh pymc python-graphviz
 ```
 
-(macOS)
+<!-- (macOS)
 ```IPython
 conda create -n bayes -c conda-forge jupyterlab seaborn bokeh jupyter_bokeh pymc numpyro python-graphviz
-```
+``` -->
 
 This will create the environment for PyMC. Then type
 
@@ -57,7 +73,13 @@ This will create the environment for PyMC. Then type
 conda activate bayes
 ```
 
-and type
+and install *numpyro* by typing
+
+```IPython
+pip install numpyro
+```
+
+Finally, type
 
 ```IPython
 python -m ipykernel install --user --name bayes --display-name "Python (Bayes)"
@@ -67,9 +89,9 @@ Now you are ready for Python!
 
 ---
 
-### Troubleshooting about installation
+## Troubleshooting about installation
 
-#### 1. Retry installation
+### 1. Retry installation
 
 If you encounter any errors during the installation process, go back to the default environment by typing
 
@@ -85,7 +107,7 @@ conda env remove -n bayes
 
 Then redo **Step 2**.
 
-#### 2. (macOS) Installing Command Line Tools for Xcode
+### 2. (macOS) Installing Command Line Tools for Xcode
 
 In case the computer says `Command Line Tools for Xcode` is missing,  install it as follows.
 
@@ -109,11 +131,11 @@ If asked, type your login password.
 
 Start `Anaconda Powershell Prompt` (Windows) or `Terminal` (macOS, Linux) and type
 
-```IPython
+<!-- ```IPython
 conda activate bayes
 ```
 
-Then type
+Then type -->
 
 <!-- ```IPython
 jupyter notebook --port=8888
@@ -124,6 +146,10 @@ jupyter lab --port=8888
 ```
 
 Your default browser will pop up.
+
+### *WARNING* (macOS only)
+
+Do note activate the `bayes` environment before you start your jupyter lab session. You must start it in the `base` environment. Make sure that the prompt starts with `(base)`, not `(bayes)`.
 
 <!-- Alternatively, you may use JupyerLab by typing -->
 
