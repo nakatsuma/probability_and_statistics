@@ -49,13 +49,15 @@ Start `Anaconda Powershell Prompt` (Windows) or `Terminal` (macOS, Linux) and ty
 conda update conda
 ```
 
-(Optional) Update all packages by typing
+This will update conda (package manager) in Anaconda.
+
+(Optional) To update all packages, type
 
 ```IPython
 conda update -n base --all
 ```
 
-This will update conda (package manager) in Anaconda. Then type
+Then type
 
 <!-- (Windows) -->
 ```IPython
@@ -73,7 +75,7 @@ This will create the environment for PyMC. Then type
 conda activate bayes
 ```
 
-and install *numpyro* by typing
+and install `numpyro` by typing
 
 ```IPython
 pip install numpyro
