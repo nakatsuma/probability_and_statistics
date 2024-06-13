@@ -59,15 +59,17 @@ conda update -n base --all
 
 Then type
 
-<!-- (Windows) -->
+(Windows)
+
 ```IPython
 conda create -n bayes -c conda-forge jupyterlab seaborn bokeh jupyter_bokeh pymc python-graphviz
 ```
 
-<!-- (macOS)
+(macOS)
+
 ```IPython
 conda create -n bayes -c conda-forge jupyterlab seaborn bokeh jupyter_bokeh pymc numpyro python-graphviz
-``` -->
+```
 
 This will create the environment for PyMC. Then type
 
@@ -75,7 +77,7 @@ This will create the environment for PyMC. Then type
 conda activate bayes
 ```
 
-and install `numpyro` by typing
+(Windows only) Install `numpyro` by typing
 
 ```IPython
 pip install numpyro
