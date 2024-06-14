@@ -77,7 +77,7 @@ This will create the environment for PyMC. Then type
 conda activate bayes
 ```
 
-(Windows only) Install `numpyro` by typing
+(Windows) Install `numpyro` by typing
 
 ```IPython
 pip install numpyro
@@ -129,21 +129,11 @@ If asked, type your login password.
 
 ---
 
-## How to start Jupyter Notebook
+## How to start JupyterLab
 
-<!-- ### Method 1: From the command line -->
+### Method 1: From the command line
 
 Start `Anaconda Powershell Prompt` (Windows) or `Terminal` (macOS, Linux) and type
-
-<!-- ```IPython
-conda activate bayes
-```
-
-Then type -->
-
-<!-- ```IPython
-jupyter notebook --port=8888
-``` -->
 
 ```IPython
 jupyter lab --port=8888
@@ -151,46 +141,27 @@ jupyter lab --port=8888
 
 Your default browser will pop up.
 
-### *WARNING* (macOS only)
+### Method 2: From Anaconda Navigator
 
-Do note activate the `bayes` environment before you start your jupyter lab session. You must start it in the `base` environment. Make sure that the prompt starts with `(base)`, not `(bayes)`.
+Start `Anaconda Navigator`. You may find it in `Start Menu` (Windows) or `Launchpad` (macOS). Then click the icon named `JupyterLab`.
 
-<!-- Alternatively, you may use JupyerLab by typing -->
+### Troubleshooting about JupyterLab
 
-<!-- ```IPython
-jupyter lab --port=8888
-``` -->
-
-### Troubleshooting about Jupyter Notebook
-
-For a bokeh interactive plot to work properly, the Jupyter Notebook server must use `port 8888` which is set by default. In case this port is occupied by another Jupyter Notebook server, you need to stop it by typing
+1. For a `Bokeh` interactive plot to work properly, the Jupyter Notebook server must use `port 8888` which is set by default. In case this port is occupied by another Jupyter Notebook server, you need to stop it by typing
 
 ```IPython
 jupyter server stop
 ```
 
-before you open a new Jupyter Notebook. If this does not work, reboot your PC.
+before you open a new JupyterLab session. If this does not work, reboot your PC.
 
-<!-- Click the `Python (Bayes)` button to create a Jupyter notebook. -->
-
-<!-- ![Anaconda Navigator](Screenshot-JupyterLab.png) -->
-
-<!--- ### Method 2: From Anaconda Navigator
-
-Start `Anaconda Navigator`. You may find it in `Start Menu` (Windows) or `Launchpad` (macOS). Alternatively you just type
+2. PyMC may fail when you start your JupyterLab session in the `bayes` environment. If so, you must start it in the `base` environment. If the prompt starts with `(bayes)`, type
 
 ```IPython
-(base) PS C:\Users\Thomas> anaconda-navigator
+conda deactivate
 ```
 
-in `Anaconda Powershell Prompt` (Windows) or `Terminal` (macOS, Linux).
-
-Click the `Launch` button in the `Jupyter Notebook` panel.
--->
-
-<!-- ![Anaconda Navigator](Screenshot-AnacondaNavigator.png) -->
-
----
+Then it will switch back to the `base` environment.
 
 ## Jupyter Notebooks and related files in `notebook-a`
 
